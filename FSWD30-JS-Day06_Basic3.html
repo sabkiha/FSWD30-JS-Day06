@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS | Day 06</title>
+</head>
+<body>
+<h1>JS | Day 04 Classwork - Basic</h1>
+
+<h2>Basic 3 | Table Creation</h2>
+<p>Click the button to create a table. It is really easy.</p>
+
+<button onclick="createTable()">Create a Table</button>
+
+<script>
+    var rows = prompt("Please enter the # rows.");
+    var columns = prompt("Please enter the # columns.");
+   	    console.log(rows);
+	    console.log(columns);
+
+	var tableArray = [rows, columns];
+		console.log(tableArray);
+
+// function createTable(tableData) {
+//   var table = document.createElement('table');
+//   var tableBody = document.createElement('tbody');
+
+//   tableData.forEach(function(rowData) {
+//     var row = document.createElement('tr');
+
+//     rowData.forEach(function(cellData) {
+//       var cell = document.createElement('td');
+//       cell.appendChild(document.createTextNode(cellData));
+//       row.appendChild(cell);
+//     });
+
+//     tableBody.appendChild(row);
+//   });
+
+//   table.appendChild(tableBody);
+//   document.body.appendChild(table);
+// }
+
+// createTable([["row 1, cell 1", "row 1, cell 2"], ["row 2, cell 1", "row 2, cell 2"]]);
+
+</script>
+
+
+</body>
+</html>

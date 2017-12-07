@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS | Day 06</title>
+</head>
+<body>
+<h1>JS | Day 04 Classwork - Basic</h1>
+
+<h2>Basic 1 | Reading Status</h2>
+<p id="one"></p>
+<script>
+	var library = [
+		{title:"When Breath Becomes Air", author:"Paul Kalanithi", readingStatus:true,}, 
+		{title:"The Girls", author:"Emma Cline", readingStatus:true,}, 
+		{title:"The Nest", author:"Cynthia", readingStatus:false,}, 
+		{title:"The Crown", author:"Kiera Cass", readingStatus:true,}, 
+		{title:"Behind Closed Doors", author:"B.A. Paris", readingStatus:false,}, 
+		{title:"It Ends With Us", author:"Colleen Hoover", readingStatus:true,}
+	];
+
+	var status = "<br>";
+	for (var i = 0; i < library.length; i++) {
+
+		if (library[i].readingStatus === true) {
+			status = "Already read -> ";
+		} else {
+			status = "You still need to read -> ";
+		}
+		document.getElementById("one").innerHTML += "<br>" + status + library[i].title +" | " + library[i].author;
+	}
+
+</script>
+
+</body>
+</html>
